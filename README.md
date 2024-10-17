@@ -13,7 +13,8 @@
   - [5.1.2 Não Funcionais](#512-não-funcionais)
 - [6. Arquitetura e módulos](#6-arquitetura-e-módulos)
 - [7. Plano de desenvolvimento](#7-plano-de-desenvolvimento)
-  - [7.1. Lista de recursos](#71-lista-de-recursos)
+  - [7.1. Recursos Tecnológicos](#71-recursos-tecnológicos)
+  - [7.2. Recursos Humanos](#72-recursos-humanos)
 - [8. Orçamento e cronograma geral](#8-orçamento-e-cronograma-geral)
   - [8.1 Orçamento](#81-orçamento)
     - [**Pessoal (Custos com Recursos Humanos)**](#pessoal-custos-com-recursos-humanos)
@@ -25,11 +26,11 @@
 - [9. Testes](#9-testes)
 - [10. Qualidade](#10-qualidade)
 - [11. Implantação](#11-implantação)
-- [12. Riscos e mitigrações](#12-riscos-e-mitigrações)
+- [12. Riscos e mitigações](#12-riscos-e-mitigações)
 - [13. Cálculo de FPA](#13-cálculo-de-fpa)
 - [14. Anexos](#14-anexos)
-- [14.1 Telas Do Sistema](#141-telas-do-sistema)
   - [Anexos](#anexos)
+- [14.1 Telas Do Sistema](#141-telas-do-sistema)
 
 
 # 1. Introdução
@@ -131,10 +132,21 @@ Aqui está a tabela com os requisitos não funcionais, ampliando a lista com bas
 
 
 # 6. Arquitetura e módulos
+<!--- Digrama de recursos --->
 
 # 7. Plano de desenvolvimento
 
-## 7.1. Lista de recursos
+## 7.1. Recursos Tecnológicos
+<!--- 
+Lista Tecnológicos:
+1.  Acesso aos logs de firewall
+2.  Acesso a rede
+3.  Comunicar com a LLM
+--->
+## 7.2. Recursos Humanos
+<!---
+Reutilizar do item 08
+--->
 
 # 8. Orçamento e cronograma geral
 
@@ -196,31 +208,42 @@ Crie um orçamentário com base no que te passei de papeis e fundamentos:
 ![Cronograma](image.png)
 # 9. Testes
 
+<!---
+1. Como testar o sistema?
+    Repetição e erro supervisionado, mandar arquivo e dizer se está correto ou não.
+2. Onde vai testar?
+    ????????????????????????
+3. Com quais dados?
+    Gerar artificialmente os dados como protótipos
+--->
+
 # 10. Qualidade 
-
+<!--- 
+Aspectos relacionados a qualidade:
+    Utilizar do Item 5.2 (Nao relacionais)
+    #O contexto desse item deve ser amplo e bem interessante
+--->
 # 11. Implantação
+<!---
 
-# 12. Riscos e mitigrações
+--->
 
+# 12. Riscos e mitigações
+
+| **Riscos** | **Mitigações** |
+| ---------- | -------------- |
+| 1. Desinteresse        |  Marketing               |
+| 2. Concorrência de Mercado       |  Incentivos e publicidade              |
+| 3. Fenômenos Naturais (chuva, raio, godzilla)      | Data Center Subterrâneo               |
+| 4. Tempo de resposta da assistente| Incetivos contínuo para melhoria e otimização do produto|
 # 13. Cálculo de FPA
 <!--- Pelo menos um formulário, exemplo tarefa do qdpm --->
 
 # 14. Anexos
-
-# 14.1 Telas Do Sistema
-
-
-
-
-
-
-
-
-
 ## Anexos 
 ![project_libre]({A05DB6A6-3C2E-49D6-A679-6E8D2B6FC9D6}.png)
 
-()()
+# 14.1 Telas Do Sistema
 
 
 
