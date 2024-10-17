@@ -1,7 +1,36 @@
 # leonardi_vinicius
 
-
 ## Sistema Para: Desenvolvimento de IA Empática: Técnicas e Impactos nas Interações Humanas
+
+- [leonardi\_vinicius](#leonardi_vinicius)
+  - [Sistema Para: Desenvolvimento de IA Empática: Técnicas e Impactos nas Interações Humanas](#sistema-para-desenvolvimento-de-ia-empática-técnicas-e-impactos-nas-interações-humanas)
+- [1. Introdução](#1-introdução)
+- [2. Objetivos e Metas](#2-objetivos-e-metas)
+- [3. Metodologia e desenvolvimento](#3-metodologia-e-desenvolvimento)
+- [4. Papeis e responsabilidade](#4-papeis-e-responsabilidade)
+- [5. Requisitos](#5-requisitos)
+  - [5.1 Funcionais](#51-funcionais)
+  - [5.1.2 Não Funcionais](#512-não-funcionais)
+- [6. Arquitetura e módulos](#6-arquitetura-e-módulos)
+- [7. Plano de desenvolvimento](#7-plano-de-desenvolvimento)
+  - [7.1. Lista de recursos](#71-lista-de-recursos)
+- [8. Orçamento e cronograma geral](#8-orçamento-e-cronograma-geral)
+  - [8.1 Orçamento](#81-orçamento)
+    - [**Pessoal (Custos com Recursos Humanos)**](#pessoal-custos-com-recursos-humanos)
+    - [**Material Permanente**](#material-permanente)
+    - [**Material de Consumo**](#material-de-consumo)
+    - [**Serviços de Terceiros**](#serviços-de-terceiros)
+    - [**Total Geral Estimado: R$ 324.500**](#total-geral-estimado-r-324500)
+  - [8.2 Cronograma Geral](#82-cronograma-geral)
+- [9. Testes](#9-testes)
+- [10. Qualidade](#10-qualidade)
+- [11. Implantação](#11-implantação)
+- [12. Riscos e mitigrações](#12-riscos-e-mitigrações)
+- [13. Cálculo de FPA](#13-cálculo-de-fpa)
+- [14. Anexos](#14-anexos)
+- [14.1 Telas Do Sistema](#141-telas-do-sistema)
+  - [Anexos](#anexos)
+
 
 # 1. Introdução
 <!----
@@ -109,8 +138,6 @@ Aqui está a tabela com os requisitos não funcionais, ampliando a lista com bas
 
 # 8. Orçamento e cronograma geral
 
-
-
 ## 8.1 Orçamento
 <!---
 Crie um orçamentário com base no que te passei de papeis e fundamentos:
@@ -164,8 +191,9 @@ Crie um orçamentário com base no que te passei de papeis e fundamentos:
 
 ### **Total Geral Estimado: R$ 324.500**
 
-## 8.2 Cronograma Geral e Execução da Pesquisa
-
+## 8.2 Cronograma Geral
+<!---Project Libre--->
+![Cronograma](image.png)
 # 9. Testes
 
 # 10. Qualidade 
@@ -174,7 +202,12 @@ Crie um orçamentário com base no que te passei de papeis e fundamentos:
 
 # 12. Riscos e mitigrações
 
-# 13. Anexos
+# 13. Cálculo de FPA
+<!--- Pelo menos um formulário, exemplo tarefa do qdpm --->
+
+# 14. Anexos
+
+# 14.1 Telas Do Sistema
 
 
 
