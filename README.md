@@ -28,6 +28,9 @@
 - [11. Implantação](#11-implantação)
 - [12. Riscos e mitigações](#12-riscos-e-mitigações)
 - [13. Cálculo de FPA](#13-cálculo-de-fpa)
+    - [Revisão da Análise de Pontos de Função (FPA)](#revisão-da-análise-de-pontos-de-função-fpa)
+    - [Resumo da Nova Contagem](#resumo-da-nova-contagem)
+    - [Total: **56 Pontos de Função**](#total-56-pontos-de-função)
 - [14. Anexos](#14-anexos)
   - [Anexos](#anexos)
 - [14.1 Telas Do Sistema](#141-telas-do-sistema)
@@ -238,6 +241,91 @@ Aspectos relacionados a qualidade:
 | 4. Tempo de resposta da assistente| Incetivos contínuo para melhoria e otimização do produto|
 # 13. Cálculo de FPA
 <!--- Pelo menos um formulário, exemplo tarefa do qdpm --->
+![tela_chatbot](image-1.png)
+
+### Revisão da Análise de Pontos de Função (FPA)
+
+1. **Entrada de Mensagens (Texto)**
+   - O usuário insere uma mensagem que é enviada ao sistema.
+   - **Tipo**: Entrada Externa (EE)
+   - **Complexidade**: Simples (entrada de texto, sem grandes validações)
+   - **Tamanho**: 3 PF
+
+2. **Envio de Mensagens (Botão de Envio)**
+   - Ao clicar no botão de envio, a mensagem é processada e enviada ao servidor da IA.
+   - **Tipo**: Entrada Externa (EE)
+   - **Complexidade**: Simples
+   - **Tamanho**: 3 PF
+
+3. **Processamento da Mensagem (Interpretação pela IA)**
+   - A IA precisa interpretar a mensagem e buscar uma resposta.
+   - **Tipo**: Arquivo Lógico Interno (ALI) (histórico de conversa é mantido)
+   - **Complexidade**: Média (envolve lógica de interpretação, possivelmente com aprendizado de máquina)
+   - **Tamanho**: 10 PF
+
+4. **Resposta da IA (Texto)**
+   - A IA gera uma resposta com base no que foi processado.
+   - **Tipo**: Saída Externa (SE)
+   - **Complexidade**: Simples (texto de resposta gerado automaticamente)
+   - **Tamanho**: 4 PF
+
+5. **Exibição do Saldo de Tokens**
+   - O sistema consulta o banco de dados para exibir o saldo de tokens do usuário.
+   - **Tipo**: Saída Externa (SE)
+   - **Complexidade**: Média (envolve busca em base de dados externa)
+   - **Tamanho**: 5 PF
+
+6. **Consulta de Saldo de Tokens**
+   - A funcionalidade que permite o usuário consultar o saldo diretamente, acionando uma API externa ou base de dados.
+   - **Tipo**: Consulta Externa (CE)
+   - **Complexidade**: Simples
+   - **Tamanho**: 3 PF
+
+7. **Acesso ao Arquivo Lógico Interno (Histórico de Conversas)**
+   - O chatbot armazena o histórico de conversas em um banco de dados para referência futura.
+   - **Tipo**: Arquivo Lógico Interno (ALI)
+   - **Complexidade**: Média
+   - **Tamanho**: 10 PF
+
+8. **Consumo de API Externa (Sistema de Tokens)**
+   - O chatbot consome uma API externa para verificar o saldo de tokens em tempo real.
+   - **Tipo**: Arquivo de Interface Externa (AIE)
+   - **Complexidade**: Média
+   - **Tamanho**: 7 PF
+
+9. **Validação do Usuário**
+   - Caso haja autenticação de usuário ou verificação de permissões, é necessário contabilizar a validação.
+   - **Tipo**: Entrada Externa (EE)
+   - **Complexidade**: Média (pode envolver autenticação e controle de acesso)
+   - **Tamanho**: 4 PF
+
+10. **Gerenciamento de Sessão**
+    - A manutenção da sessão do usuário (por exemplo, tokens de autenticação) exige controle interno.
+    - **Tipo**: Arquivo Lógico Interno (ALI)
+    - **Complexidade**: Simples
+    - **Tamanho**: 7 PF
+
+---
+
+### Resumo da Nova Contagem
+
+| Funcionalidade                              | Qtde | Tipo | Complexidade | Tamanho  |
+|---------------------------------------------|------|------|--------------|----------|
+| Entrada de Mensagens (Texto)                | 1    | EE   | Simples      | 3 PF     |
+| Envio de Mensagens (Botão)                  | 1    | EE   | Simples      | 3 PF     |
+| Processamento da Mensagem                   | 1    | ALI  | Média        | 10 PF    |
+| Resposta da IA                              | 1    | SE   | Simples      | 4 PF     |
+| Exibição do Saldo de Tokens                 | 1    | SE   | Média        | 5 PF     |
+| Consulta de Saldo de Tokens                 | 1    | CE   | Simples      | 3 PF     |
+| Acesso ao Arquivo Lógico Interno (Histórico)| 1    | ALI  | Média        | 10 PF    |
+| Consumo de API Externa (Sistema de Tokens)  | 1    | AIE  | Média        | 7 PF     |
+| Validação do Usuário                        | 1    | EE   | Média        | 4 PF     |
+| Gerenciamento de Sessão                     | 1    | ALI  | Simples      | 7 PF     |
+
+---
+
+### Total: **56 Pontos de Função**
+
 
 # 14. Anexos
 ## Anexos 
